@@ -19,16 +19,8 @@
     "@sapphire/utilities": "^3.1.0",
     "discord.js": "^13.3.1"
   },
-  "devDependencies": {
-    "@sapphire/prettier-config": "^1.2.6",
-    "nodemon": "^2.0.15",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.5.0"
-  },
   "scripts": {
     "watch": "nodemon -L --watch src",
-    "start": "node src/index.js",
-    "format": "prettier --write \"src/**/*.js\""
-  },
-  "prettier": "@sapphire/prettier-config"
+    "start": "node src/index.js"
+  }
 }
