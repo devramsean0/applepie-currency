@@ -1,8 +1,8 @@
 {
-  "name": "bot",
+  "name": "applepie-currency",
   "version": "1.0.0",
   "main": "src/index.js",
-  "author": "@sapphire",
+  "author": "devramsean0",
   "license": "UNLICENSE",
   "dependencies": {
     "@discordjs/collection": "^0.3.2",
