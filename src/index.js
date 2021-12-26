@@ -1,4 +1,4 @@
-require('./lib/setup');
+require('./lib/setuplibs/intsetup.js');
 require('dotenv').config()
 const { LogLevel, SapphireClient } = require('@sapphire/framework');
 const { prefix } = require('./config.json');
