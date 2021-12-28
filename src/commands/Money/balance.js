@@ -13,14 +13,14 @@ class UserCommand extends SubCommandPluginCommand {
         const currentbalance = db.get(message.author.id);
         const bank = new db.table('bank');
         const bankbalance = bank.get(message.author.id);
-        const Embed = new MessageEmbed()
+        const embed = new MessageEmbed()
         .setTitle(`${botname} | Balance`)
         .setColor(embedcolor)
         .addFields(
             {name: 'Current', value: `Balance: ${currentbalance}`},
             {name: 'Bank', value: `Balance: ${bankbalance}`}
         )
-        message.channel.send({embeds: [Embed]});
+        message.channel.send({embeds: [embed]});
     }
 }
 

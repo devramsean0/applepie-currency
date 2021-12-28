@@ -22,7 +22,11 @@ class UserCommand extends SubCommandPluginCommand {
             .setDescription(`Gave ${amount} \n They now have: ${db.get(user.id)}`)
             message.channel.send({embeds: [embed]})
         } else {
-            message.channel.send('Not enough money')
+            const nomoney = new MessageEmbed()
+            .setTitle(`${botname} | Deposit`)
+            .setColor(embedcolor)
+            .setDescription('Not Enough money')
+            message.channel.send({embeds: [nomoney]})
         }
     }
 }

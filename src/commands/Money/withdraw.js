@@ -15,8 +15,17 @@ class UserCommand extends SubCommandPluginCommand {
         if (bankbalance >= amount) {
             bank.subtract(message.author.id, amount);
             db.add(message.author.id, amount);
+            const embed = new MessageEmbed()
+            .setTitle(`${botname} | Withdraw`)
+            .setColor(embedcolor)
+            .setDescription('Sucess')
+            message.channel.send({embeds: [embed]})
         } else {
-            message.channel.send('Not enough money')
+            const nomoney = new MessageEmbed()
+            .setTitle(`${botname} | Deposit`)
+            .setColor(embedcolor)
+            .setDescription('Not Enough money')
+            message.channel.send({embeds: [nomoney]})
         }
     }
 }
