@@ -5,5 +5,9 @@
 		"608182962760187934"
 	],
 	"embedcolor":"#e60e0e",
-	"botname":"Nderd is an Idiot"
+	"botname":"Nderd is an Idiot",
+	"admins": [
+		"608182962760187934",
+		"781192853400715346"
+	]
 }

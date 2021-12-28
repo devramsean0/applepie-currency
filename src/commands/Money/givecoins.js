@@ -6,7 +6,7 @@ class UserCommand extends SubCommandPluginCommand {
     constructor(context, options) {
         super(context, {
             ...options,
-            preconditions: ['OwnerOnly']
+            preconditions: ['Admin']
         });
     }
 
